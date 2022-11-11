@@ -8,6 +8,12 @@ import { HeaderComponent } from './header/header.component';
 import { SquareComponent } from './square/square.component';
 import { BoardComponent } from './board/board.component';
 import { AppRoutingModule } from './app-routing.module';
+import { SignUpComponent } from './sign-up/sign-up.component';
+import { LoginComponent } from './login/login.component';
+import { ProfileComponent } from './profile/profile.component';
+import { LeaderboardComponent } from './leaderboard/leaderboard.component';
+import { PlayGameComponent } from './play-game/play-game.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +22,13 @@ import { AppRoutingModule } from './app-routing.module';
     FooterComponent,
     HeaderComponent,
     SquareComponent,
-    BoardComponent
+    BoardComponent,
+    SignUpComponent,
+    LoginComponent,
+    ProfileComponent,
+    LeaderboardComponent,
+    PlayGameComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule,
