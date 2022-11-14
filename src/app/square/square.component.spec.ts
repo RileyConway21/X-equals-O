@@ -11,7 +11,9 @@ describe('SquareComponent', () => {
       declarations: [ SquareComponent ]
     })
     .compileComponents();
-
+  });
+    
+  beforeEach(() => {
     fixture = TestBed.createComponent(SquareComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
