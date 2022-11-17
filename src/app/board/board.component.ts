@@ -18,7 +18,8 @@ export class BoardComponent implements OnInit {
 
 
   newGame() {
-    this.squares = Array(9).fill(null);
+    // this.squares = Array(9).fill(null);
+    this.squares =  [null, null, null, null, null, null, null,null, null]
     this.winner = null;
     this.xIsNext = true;
   }
@@ -28,8 +29,14 @@ export class BoardComponent implements OnInit {
   }
 
   makeMove(idx: number) {
+    console.log(idx)
+    console.log(!this.squares[idx])
+    // Is true for first click
+    // False after initial click
     if (!this.squares[idx]) {
+      console.log(this.squares)
       this.squares.splice(idx, 1, this.player);
+      console.log(this.squares)
       this.xIsNext = !this.xIsNext;
     }
     this.winner = this.calculateWinner();
