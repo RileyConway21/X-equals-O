@@ -19,7 +19,7 @@ export class BoardComponent implements OnInit {
 
   newGame() {
     // this.squares = Array(9).fill(null);
-    this.squares =  [null, null, null, null, null, null, null,null, null]
+    this.squares = [null, null, null, null, null, null, null, null, null]
     this.winner = null;
     this.xIsNext = true;
   }
@@ -41,7 +41,7 @@ export class BoardComponent implements OnInit {
     }
     this.winner = this.calculateWinner();
   }
-  
+
   calculateWinner() {
     const lines = [
       [0, 1, 2],
