@@ -11,6 +11,8 @@ import { ProfileComponent } from './profile/profile.component';
 import { LeaderboardComponent } from './leaderboard/leaderboard.component';
 import { PlayGameComponent } from './play-game/play-game.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { HomeComponent } from './home/home.component';
+import { NavbarComponent } from './navbar/navbar.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,9 @@ import { DashboardComponent } from './dashboard/dashboard.component';
     ProfileComponent,
     LeaderboardComponent,
     PlayGameComponent,
-    DashboardComponent
+    DashboardComponent,
+    HomeComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
