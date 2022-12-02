@@ -1,4 +1,7 @@
+<app-navbar></app-navbar>
+
 <h1>Current Player: {{ player }}</h1>
+
 
 <button nbButton outline status="danger" (click)="newGame()">Start New Game</button>
 <h2 *ngIf="winner">
@@ -8,6 +11,7 @@
     <app-square *ngFor="let val of squares; let i = index" [value]="val" (click)="makeMove(i)">
     </app-square>
 </main>
+
 
 <!-- [1,2,3,4] -->
 <!-- <div *ngFor="let num of [1,2,3,4]">

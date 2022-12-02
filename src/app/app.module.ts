@@ -12,6 +12,7 @@ import { LeaderboardComponent } from './leaderboard/leaderboard.component';
 import { PlayGameComponent } from './play-game/play-game.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { HomeComponent } from './home/home.component';
+import { NavbarComponent } from './navbar/navbar.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { HomeComponent } from './home/home.component';
     LeaderboardComponent,
     PlayGameComponent,
     DashboardComponent,
-    HomeComponent
+    HomeComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
