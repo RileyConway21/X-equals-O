@@ -24,6 +24,16 @@ export class BoardComponent implements OnInit {
     this.xIsNext = true;
   }
 
+
+  resetGame() {
+    // Step 1- New Game
+    this.newGame()
+    // Step 2- Modul of game results
+
+    // Step 3- Add history 
+
+  }
+
   get player() {
     return this.xIsNext ? 'X' : 'O';
   }
@@ -40,6 +50,14 @@ export class BoardComponent implements OnInit {
       this.xIsNext = !this.xIsNext;
     }
     this.winner = this.calculateWinner();
+
+    if (this.winner === 'X' || this.winner === 'O'){
+
+      this.resetGame()
+      console.log("reset game");
+      // call reset game
+
+    }
   }
 
   calculateWinner() {
@@ -55,14 +73,19 @@ export class BoardComponent implements OnInit {
     ];
     for (let i = 0; i < lines.length; i++) {
       const [a, b, c] = lines[i];
+      // Checks to see if a player has three of these boxes
       if (
         this.squares[a] &&
         this.squares[a] === this.squares[b] &&
         this.squares[a] === this.squares[c]
       ) {
+        // returns winner
         return this.squares[a];
       }
     }
+    // This returns nothing
     return null;
   }
+
+
 }
