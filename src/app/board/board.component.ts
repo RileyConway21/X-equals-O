@@ -9,6 +9,7 @@ export class BoardComponent implements OnInit {
   squares: any[];
   xIsNext: boolean;
   winner: string;
+  switch:boolean = false;
 
   constructor() { }
 
@@ -28,8 +29,9 @@ export class BoardComponent implements OnInit {
   resetGame() {
     // Step 1- New Game
     this.newGame()
-    // Step 2- Modul of game results
-
+    // Step 2- Modal of game results
+    this.switch = true;
+    
     // Step 3- Add history 
 
   }

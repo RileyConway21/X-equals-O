@@ -1,3 +1,8 @@
+.show-modal{
+    opacity: 1 !important;
+    display: block !important;
+}
+
 main {
     display: grid;
     grid-template-columns: 200px 200px 200px;
