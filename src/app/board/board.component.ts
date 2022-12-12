@@ -10,7 +10,8 @@ export class BoardComponent implements OnInit {
   xIsNext: boolean;
   winner: string;
   switch:boolean = false;
-
+currentWinner: string; 
+tie: string;
   constructor() { }
 
   ngOnInit() {
@@ -54,11 +55,13 @@ export class BoardComponent implements OnInit {
     this.winner = this.calculateWinner();
 
     if (this.winner === 'X' || this.winner === 'O'){
-
+this.currentWinner = this.winner;
       this.resetGame()
       console.log("reset game");
       // call reset game
 
+    }else{
+      this.currentWinner = null;
     }
   }
 
